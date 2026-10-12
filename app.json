@@ -1,0 +1,28 @@
+{
+  "name": "BROKEN MINI BOT",
+  "description": "BROKEN MINI BOT WhatsApp bot (Baileys)",
+  "repository": "",
+  "keywords": [
+    "whatsapp",
+    "baileys",
+    "bot",
+    "node"
+  ],
+  "buildpacks": [
+    {
+      "url": "https://github.com/heroku/heroku-buildpack-nodejs.git"
+    }
+  ],
+  "env": {
+    "OWNER_NUMBER": {
+      "description": "Owner WhatsApp number with country code, digits only; keep private",
+      "required": true,
+      "value": ""
+    },
+    "OWNER_NAME": {
+      "description": "Bot owner display name",
+      "required": false,
+      "value": "BROKEN"
+    }
+  }
+}
